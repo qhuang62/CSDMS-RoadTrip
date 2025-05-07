@@ -1,2 +1,2 @@
-# 2025-CSDMSRoadTrip
+# CSDMS-RoadTrip
 workshop for git/github
