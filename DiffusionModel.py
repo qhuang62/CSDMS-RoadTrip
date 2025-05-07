@@ -1,35 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# ### Build a 1D diffusion model
-
-# Wed May 7 CSDMS roadtrip class 1
-# 
-# we tried to code a 1-dimensional model of diffusion.
-
-# #### Formula
-
-# $$ \frac{\partial C}{\partial t} = D\frac{\partial^2 C}{\partial x^2} $$
-# 
-# discretized:
-# 
-# $$ C^{t+1}_x = C^t_x + {D \Delta t \over \Delta x^2} (C^t_{x+1} - 2C^t_x + C^t_{x-1}) $$
-
-# the model assumes:
-# 
-# - constant diffusivity;
-# - regular grid;
-# - has a step funciton for an initial condition;
-# - fixed boundary conditions.
-#  
-# C(x,t),rate of change of concentration, over time is proportional to the curvature (second derivative) of concentration over space.
-# 
-# D is the diffusion coefficient - a positive constant telling you how fast things spread out.
-# 
-# FTCS scheme by Slingerland and Kump (2011). 
-
-# In[ ]:
-
+"""One Dimensional Diffusion Model"""
 
 #import libraries
 import numpy as np #for arrays
